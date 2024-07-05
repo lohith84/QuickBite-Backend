@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
 
 // app config
 const app = express();
-const port = process.env.Port;
+const port = process.env.Port || 7000;
 
 // middlewares
 app.use(express.json());
